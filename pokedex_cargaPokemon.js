@@ -1,7 +1,7 @@
 const loadPokemon = async () => {
     const min = 1;
     const max = 898;
-    const pokemonAlazar = Math.floor(Math.random() * (max - min) + min);
+    const randomPokemon = Math.floor(Math.random() * (max - min) + min);
     const shiny = Math.floor(Math.random() * (10 - 1) + 1) === 1;
 
     try {
