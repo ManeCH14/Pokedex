@@ -1,8 +1,8 @@
 const loadPokemon = async () => {
-    var min = 1;
-    var max = 898;
-    var pokemonAlazar = Math.floor(Math.random() * (max - min) + min);
-    var shiny = Math.floor(Math.random() * (10 - 1) + 1) == 1;
+    const min = 1;
+    const max = 898;
+    const pokemonAlazar = Math.floor(Math.random() * (max - min) + min);
+    const shiny = Math.floor(Math.random() * (10 - 1) + 1) === 1;
 
     try {
         const response = await fetch('https://pokeapi.co/api/v2/pokemon/' + pokemonAlazar)
