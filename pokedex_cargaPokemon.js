@@ -5,12 +5,12 @@ const loadPokemon = async () => {
     const shiny = Math.floor(Math.random() * (10 - 1) + 1) === 1;
 
     try {
-        const response = await fetch('https://pokeapi.co/api/v2/pokemon/' + pokemonAlazar)
+        const response = await fetch('https://pokeapi.co/api/v2/pokemon/' + randomPokemon)
         const data = await response.json();
         let pokemonSprite = '';
         if (shiny) {
             console.log('Te salio un shiny');
-            pokemonSprite += `<img class= "imagen" src="${data.sprites.front_shiny}">`
+            pokemonSprite += `<img class= "imagen" src="${data.sprites.front_shiny}"> <h1>Pokemon Shiny</h1>`
         } else {
             pokemonSprite += `<img class= "imagen" src="${data.sprites.front_default}">`
         }
