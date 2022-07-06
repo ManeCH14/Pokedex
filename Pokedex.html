@@ -16,25 +16,33 @@
 
 <body class="d-flex h-100 text-center text-white bg-dark">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header>
-        <div>
-            <h1>Pokedex</h1>
-        </div>
-    </header>
+        <header>
+            <div>
+                <h1>Pokedex</h1>
+            </div>
+        </header>
 
-    <main class="px-3">
-        <h3 >Pokemon:</h3>
-        <div>
-            <h1 id="pokemonName"></h1>
-            <h1 id="pokemonSprite"></h1>
-            <br>
-        </div>
-        <p class="lead">
-            <button onclick="loadPokemon()" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Mostrar Pokemon</button>
-        </p>
-    </main>
-    <script src="pokedex_cargaPokemon.js"></script>
-</div>
+        <main class="px-3">
+            <h3>Pokemon:</h3>
+            <div>
+                <h1 id="pokemonName"></h1>
+                <h1 id="pokemonSprite"></h1>
+                <br>
+            </div>
+            <p class="lead">
+                <button onclick="loadPokemon()" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Mostrar
+                    Pokemon</button>
+            </p>
+        </main>
+
+        <body class="row">
+            <h1 class="col-4" style="color: red;">Pokedex</h1>
+            <div class="" id="pokemonSprite"></div>
+            <h1 class="" id="pokemonName"></h1>
+            <img class="" id="imagen">
+            <button onclick="loadPokemon()">Mostrar pokemon</button>
+            <script src="pokedex_cargaPokemon.js"></script>
+    </div>
 </body>
 
 </html>
